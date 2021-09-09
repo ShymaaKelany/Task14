@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap');
+* , body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p{
+    line-height: 1.86em;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    font-weight: 400;
+    color: #686868;
+}
+/* statr section home */
+
+.home{
+    width: 100%;
+    height: 800px;
+    background-image: url(http://www.engage.veented.com/bakery/wp-content/uploads/sites/27/2017/04/drew-coffman-1872.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    margin-bottom: 100px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,.2) ;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+}
+ .container{
+    width:90% ;
+    height: 100%;
+    margin: auto;
+    /* background-color: teal; */
+}
+nav .container .logo{
+    width: 15%;
+    /* background-color: yellow; */
+    float: left;
+}
+nav .container .logo img{
+    width: 100%;
+}
+ nav .container .list{
+   float: right;
+   width: 41%;
+}
+nav .container .list , nav .container .logo{
+    padding-top: 30px;
+}
+nav .container .list ul {
+    list-style-type: none;
+}
+nav .container .list ul li{
+    display: inline;
+   
+}
+
+nav .container .list ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding-left: 25px;
+    font-weight: 400px;
+    font-size: 18px !important;
+    transition: all 1s;
+   
+}
+nav .container .list ul li a:hover:not(.hom){
+    color: rgb(212, 158, 87)
+    
+}
+nav .container .contant{
+    width: 47%;
+    height: 300px;
+     position: absolute;
+     top: 242px;
+     left: 360px;
+   padding: 50px;
+   text-align: center;
+}
+.one , .two{
+    color: rgba(255,255,255, .92);
+    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 1.86em;
+    font-family: "Alegreya Sans";
+    font-weight: 400px;
+}
+h1{
+    margin-top: -20px ;
+    color: #fff;
+    margin-bottom: 18px;
+    line-height: 1.4em;
+    font-size: 60px;
+    font-family: 'Alegreya', serif;
+    font-weight: 400px;
+}
+.buttons{
+    margin-top: 47px;
+}
+.buttons .btn1 ,.btn2{
+    border-radius: 3px;
+    margin-left: 10px;
+    padding: 16px 29px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Alegreya Sans";
+    font-weight: 700;
+    transition: all .5s;
+}
+.buttons .btn1{
+    border: 2px solid transparent;
+    background-color: #8e7754;  
+}
+ .buttons .btn2{
+    border: 2px solid #fff;
+}
+.buttons .btn1:hover{
+    background-color: #fff;
+    color: #000;
+}
+.buttons .btn2:hover{
+    background-color: #fff;
+    color: #000;
+}
+.mouse{
+    width: 28px;
+    height: 46px;
+    border: 2px solid white;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    top:700px ;
+    left: 420px;
+}
+.point{
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation-name: action;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes action {
+    from {top: 5%;}
+    to {top: 50%; opacity: 0;}
+} 
+
+/* end section .home */
+
+
+/* statr section .about-speaking */
+
+
+.about-speaking{
+    width: 100%;
+    height: 700px;
+}
+ .contant-desc{
+    width: 90%;
+    height: 600px;
+    margin: auto;
+}
+ .contant-desc .about-img{
+    width: 43%;
+    height: 550px;
+    float: left;
+}
+ .contant-desc .about-img img{
+   width: 100%;
+   object-fit: cover;
+   height: 100%;
+}
+ .contant-desc .title{
+    width: 51%;
+    height: 80%;
+    float: right;
+    padding-top: 50px;
+}
+ .contant-desc .title h2{
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 1.38em;
+    font-family: "Alegreya";
+    font-weight: 400;
+}
+.contant-desc .title p{
+    margin-bottom: 35px;
+}
+.contant-desc .title ul{
+    margin-top: 35px;
+    list-style: none;
+}
+ .contant-desc .title ul li{
+    margin-bottom:50px ;
+    color: #686868;
+    margin-left: 40px;
+    position: relative;
+    
+}
+.contant-desc .title ul li::before{
+    content:"" ;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 100%;
+    left: -60px;
+    top: -15px;
+    
+    
+  
+
+}
+
+/* End section .about-speaking */
+
+
+/* statr section location */
+
+.location{
+    margin-bottom: 90px;
+    margin-top: 30px;
+    width: 100%;
+    height: 650px;
+    background: #f8f8f8;
+}
+.location .contant-desc{
+    width: 90%;
+    height: 450px;
+    margin: auto;
+}
+.location .contant-desc .about-img{
+    width: 46%;
+    height: 500px;
+    float: right;
+    position: relative;
+}
+.location .contant-desc .about-img img{
+   width: 100%;
+   height: 485px;
+   object-fit: cover;
+   position: absolute;
+   top: 85px;
+   
+}
+.location .contant-desc .title{
+    width: 46%;
+    height: 80%;
+    float: left;
+    padding-top: 50px;
+}
+.location .contant-desc .title h2{
+    padding-top:135px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 1.38em;
+    font-family: "Alegreya";
+    font-weight: 400;
+}
+.location .contant-desc .title p{
+    margin-bottom: 40px;
+}
+
+/* end section location  */
+
+
+/* statr section baking  */
+
+
+.Baking{
+    width: 100%;
+    height: 600px;
+    margin-bottom: 100px;
+
+}
+.Baking .Our-Baking{
+    text-align: center;
+    margin-bottom: 30px;
+   
+}
+.Baking .Our-Baking h3{
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 1.38em;
+    font-family: "Alegreya";
+    font-weight: 400;
+}
+.Baking .Our-Baking p{
+    line-height: 1.86em;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    font-weight: 400;
+    color: #686868;
+    margin-bottom: 60px;
+}
+.Baking .image{
+ width: 90%;
+ height: 300px;
+ margin: auto;
+}
+.Baking .image img{
+    width:370px;
+    height:300px ;
+  
+    
+}
+.Baking .head-title h4{
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 1.38em;
+    font-family: "Alegreya";
+    font-weight: 400;
+    color: #303030;
+    text-align: center; 
+
+}
+.Baking .paragraph{
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+ 
+.Baking .three-home .img-text{
+    width: 32%;
+    float: left;
+    padding-left: 10px;
+
+}
+
+/* end section baking  */
+
+
+/* start section map */
+
+.Map{
+    width: 100%;
+    height: 700px;
+    margin-top: 100px ;
+    background: #f8f8f8;
+}
+.Map .contant-desc .about-img{
+    float: right;
+    width: 50%;
+    margin-top: 100px;
+}
+.Map  .contant-desc .title{
+    float: left;
+    width: 45%;
+    height: 550px;
+    margin-top: 50px;
+}
+ .Map .contant-desc .title ul li::before{
+    background-color: #8e7754 !important; 
+}
+
+/* end section map */
+
+
+/* start section main-footer */
+
+
+.main-footer{
+    width: 100%;
+    height: 500px;
+    background-color: #403d38;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.footer{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    /* position: relative; */
+   
+}
+.main-footer .footer .top-footer{
+    width: 23%;
+    height: 90%;
+    margin-bottom: 50px;
+    float: left;
+    margin-right: 15px;
+    
+    
+}
+h3{
+    padding-top: 20px ;
+    margin-bottom: 30px;
+    color: white;
+}
+.main-footer .footer .top-footer p{
+    margin-bottom: 30px;
+    line-height: 1.86em;
+    font-size: 16px;
+    color: #969696;
+}
+.main-footer .footer .group{
+    width: 24%;
+    float: left;
+    margin-right: 15px;
+}
+.main-footer .footer .group ul{
+    list-style: none;
+  
+}
+.main-footer .footer .group .list li{
+    margin-bottom: 11px;
+    padding-bottom: 12px;
+    line-height: 1.86em;
+    font-family: "Alegreya Sans";
+    color: #969696;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+.main-footer .footer .group ul li:not(.li-list){
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.main-footer .bootom-footer{
+    width: 100%;
+    height: 300px;
+    background-color: #353330;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.bootom-footer .container .footor-img{
+    height: 100px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+.bootom-footer .container p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.bootom-circle{
+    height: 60px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #484540;
+    border-radius: 100%;
+    background-color: #484540;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    left: 513px;
+    top: 10px;
+ 
+}
+   
+/* end section main-footer */
